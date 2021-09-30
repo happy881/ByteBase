@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<!--    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+<!-- <script type="text/javascript" charset="utf-8" src="//g.alicdn.com/sd/nch5/index.js?t=2015052012"></script> -->
+<script src="//g.alicdn.com/sd/smartCaptcha/0.0.4/index.js"></script>
+<script src="//g.alicdn.com/sd/quizCaptcha/0.0.1/index.js"></script>
+<script src="https://g.alicdn.com/AWSC/AWSC/awsc.js"></script>
+</html>
+<script>
+  var lang = sessionStorage.getItem('lang');
+  if (lang === 'zh-CN' || lang === null) {
+    document.title = '冰塔数科-Filecoin Plus大中华区公证人'
+  } else {
+    document.title = 'ByteBase - Filecoin Plus Greater China Notary'
+  }
+  // function placeholderPic(){
+  //   document.documentElement.style.fontSize=document.documentElement.offsetWidth/10+"px"; //同上
+  // }
+  // placeholderPic();
+  window.onresize = function(){
+    location.reload()
+  }
+</script>
+<style>
+    body {
+        -ms-overflow-style: none;
+        /* IE 10+ */
+        scrollbar-width: 1px;
+        /* Firefox */
+    }
+
+    body::-webkit-scrollbar {
+        display: 1px;
+    }
+    .el-dialog {
+      width: 6.3rem;
+    }
+</style>
